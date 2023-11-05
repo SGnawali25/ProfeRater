@@ -1,5 +1,4 @@
 /* Login Page CSS */
-
 .Login_Container {
   background-color: #2e4374;
   width: 50%;
@@ -12,7 +11,7 @@
 }
 
 .Login_Text {
-  color: #e5c3a6;
+  color: #ffffff;
   margin-top: 30px;
   margin-left: 45%;
 }
@@ -29,7 +28,7 @@
 }
 
 .Login_Button {
-  background-color: #e5c3a6;
+  background-color: #ffffff;
   width: 100px;
   height: 30px;
   border-radius: 10px;
@@ -49,4 +48,5 @@ h6 {
   height: 30px;
   border-radius: 10px;
   margin-left: 47%;
+  color: #ffffff;
 }

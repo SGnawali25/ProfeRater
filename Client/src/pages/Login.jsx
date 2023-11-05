@@ -13,7 +13,7 @@ function Login() {
           </button>
         </form>
       </div>
-      <h6>Don't have an account?</h6>
+      <h6 className="Account_">Don't have an account?</h6>
       <button className="SignUp_Button" type="submit">
         Sign Up
       </button>
