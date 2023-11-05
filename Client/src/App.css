@@ -201,7 +201,7 @@ h6 {
 .Pie_InfoBar {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
 }
 
 .Star_Count {
@@ -232,12 +232,107 @@ h6 {
   background-size: cover;
   height: 400px;
   position: relative;
+  border-radius: 10px;
 }
 
 .image_footer {
   background-color: grey;
-  width: 100%;
+  width: 98.5%;
   height: 100px;
   position: absolute;
   bottom: 0;
+  display: flex;
+  flex-direction: column; /* Align items to the top */
+  padding: 10px;
+  border-radius: 9px;
+}
+
+.Prof_Line {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.University_Line {
+  display: flex;
+  margin: 0;
+}
+
+.rating {
+  display: flex;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 24px;
+  color: gold;
+  margin: 2px;
+}
+
+.star.half-filled::before {
+  content: "\2605"; /* Unicode star character */
+  position: absolute;
+  width: 50%;
+  overflow: hidden;
+  color: transparent;
+}
+
+.star.filled {
+  color: gold;
+}
+
+.Prof_name {
+  margin: 0;
+}
+.Uni_name {
+  margin-top: 20px;
+}
+
+.Dashboard {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.Dashboard_Right {
+  width: 90%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.text,
+.dropdown {
+  font-size: larger;
+  text-decoration: none;
+  color: #000;
+}
+
+.Rating_Name {
+  text-align: center;
 }
