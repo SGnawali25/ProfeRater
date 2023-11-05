@@ -1,42 +1,52 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Login Page CSS */
+
+.Login_Container {
+  background-color: #2e4374;
+  width: 50%;
+  height: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Login_Text {
+  color: #e5c3a6;
+  margin-top: 30px;
+  margin-left: 45%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textbox {
+  width: 90%;
+  height: 30px;
+  border-radius: 10px;
+  margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.textbox:[::placeholder] {
+  padding: 5px;
 }
 
-.card {
-  padding: 2em;
+.Login_Button {
+  background-color: #e5c3a6;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 45%;
+  margin-top: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+h6 {
+  color: #2e4374;
+  font-size: large;
+  margin-left: 45%;
+}
+
+.SignUp_Button {
+  background-color: #2e4374;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 47%;
 }
