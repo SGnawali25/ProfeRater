@@ -52,6 +52,36 @@
   }
   
   
-  
-  
+.Prof_Profile_Container{
+  height: 220px;
+  display: flex;
+  flex-direction: row;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.Prof_Profile_Container img {
+  height: 220px;
+  width: 200px;
+}
+
+.professor_info {
+  margin-left: 10px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.professor_detail {
+  margin: 5px 0; /* Adjust margin values as needed */
+}
+
+.rating {
+  font-size: 36px;
+  color: gold;
+  margin-top: 10px; /* Adjust top margin as needed */
+}
+
   

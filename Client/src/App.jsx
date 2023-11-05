@@ -1,19 +1,19 @@
 import { useState } from "react";
 import "./App.css";
-import "./index.css"
+import "./index.css";
 import Login from "../src/pages/Login.jsx";
 import Professor_SignUp from "./pages/Professor_SignUp.jsx";
 import Student_SignUp from "./pages/Student_SignUp.jsx";
-import Prof_Profile from "./pages/Prof_Profile.jsx";
+import Prof_Profile from "./components/Prof_Profile.jsx";
 
 
 import SignUp from "../src/pages/SignUp.jsx";
-function App() {
+import Rating from "../src/components/Rating.jsx";
+import Professor_Dashboard from "./pages/Professor_Dashboard";
 
+function App() {
   return (
-    <>
-      <Prof_Profile />
-    </>
+    <Prof_Profile />
   );
 }
 
