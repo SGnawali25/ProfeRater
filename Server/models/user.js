@@ -22,6 +22,59 @@ const userSchema = new mongoose.Schema({
         minlength: [6, 'Your password must be longer than 6 characters'],
         select: false
     },
+    university: {
+        type: String,
+        required: [true, 'Please enter the name of your university']
+    },
+    contact: {
+        type: String,
+        required: [true, "Please enter your phone number"]
+    },
+    role: {
+        type: String,
+        required: [true, 'Please enter your role']
+    },
+    subject: {
+        type: String
+    },
+    picture: {
+        public_id: {
+            type: String,
+            required: true
+        },
+        url: {
+            type: String,
+            required: true
+        }
+    },
+    about: {
+        type: String
+    },
+    ratings: {
+        type: Number,
+        default: 0
+    },
+    comments : [
+        {
+            user: {
+                type: mongoose.Schema.ObjectId,
+                ref: 'User',
+                required: true
+            },
+            name: {
+                type: String,
+                required: true
+            },
+            rating: {
+                type: Number,
+                required: true
+            },
+            comment: {
+                type: String,
+                required: true
+            }
+        }
+    ],
     createdAt: {
         type: Date,
         default: Date.now
