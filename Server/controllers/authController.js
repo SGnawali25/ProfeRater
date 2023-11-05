@@ -7,21 +7,39 @@ const cloudinary = require('cloudinary');
 
 //Register a user
 exports.registerUser = catchAsyncErrors( async(req, res, next) => {
-    const {name, email, password, role, contact, university, about, subject, picture} = req.body;
+    const {name, email, password, role, contact, university, about, subject} = req.body;
+    console.log(req.body);
 
     // //whether user enterd email and password
     if(!email || !password || !name || !role || !university || !contact){
         return next(new ErrorHandler('Please enter name, email, role and password properly', 400));
     }
 
-    if(req.user.role === 'teacher' && !req.body.picture ){
+
+    if (req.body.role === 'student'){
+        const user = await User.create({
+            name,
+            email,
+            password, 
+            role,
+            university,
+            contact,
+            about,
+            subject,
+        })
+        sendToken(user, 200, "", res)
+
+    }
+
+    else if(req.body.role === 'teacher' && !req.body.picture ){
         return next(new ErrorHandler('Please choose your profile picture', 400));
     }
 
+
     const result = await cloudinary.v2.uploader.upload(req.body.picture,{
-        folder: "users",
-        width: 150,
-        crop: "scale"
+    folder: "users",
+    width: 150,
+    crop: "scale"
     })
 
 
@@ -39,8 +57,6 @@ exports.registerUser = catchAsyncErrors( async(req, res, next) => {
             url: result.secure_url,
         }
     })
-
-    
 
     sendToken(user, 200, "", res)
 
