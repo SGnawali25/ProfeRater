@@ -6,12 +6,13 @@ import Professor_SignUp from "./pages/Professor_SignUp.jsx";
 import Student_SignUp from "./pages/Student_SignUp.jsx";
 import SignUp from "../src/pages/SignUp.jsx";
 import Rating from "../src/components/Rating.jsx";
-import Professor_Dashboard from "./pages/Professor_Dashboard";
+import Professor_Dashboard from "./pages/Professor_Dashboard.jsx";
+import Landing_Page from "./pages/Landing_Page.jsx";
 
 function App() {
   return (
     <>
-      <Professor_Dashboard />
+      <Landing_Page />
     </>
   );
 }

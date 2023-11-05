@@ -1,3 +1,43 @@
+/* Landing Page CSS */
+.BackGround {
+  width: 98.5%;
+  height: 750px;
+  background-color: #4b547e;
+  right: 0%;
+  top: 0%;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.Welcome_Text {
+  font-size: 70px;
+  font-weight: 600;
+  color: #fff;
+  padding: 20px;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+.Get_Started_Button {
+  font-size: 30px;
+  font-weight: 600;
+  color: #4b547e;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: ffff;
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform: 1s ease;
+}
+.Get_Started_Button:hover {
+  background-color: #4b547e;
+  color: #ffff;
+  border: 1px solid #ffff;
+}
 /* Login Page CSS */
 .Container {
   background-color: #2e4374;
@@ -99,7 +139,7 @@ h6 {
   align-items: center;
   width: 100%; /* Adjust the total width as needed */
   margin: 0 auto; /* Center the containers on the page */
-  background-color: #3a94ad;
+  background-color: grey;
   padding: 20px;
   border-radius: 20px;
   margin: auto;
