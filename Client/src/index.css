@@ -1,0 +1,56 @@
+/* Student_SignUp CSS */
+
+
+.Signup_Container {
+    background-color: #2e4374;
+    width: 50%;
+    height: 470px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Login_Container {
+    background-color: #2e4374;
+    width: 50%;
+    height: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .Signup_Text {
+    color:white;
+    margin-top: 5px;
+    margin-left: 45%;
+  }
+  
+  .textbox {
+    width: 99%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+  }
+  
+  .textbox:[::placeholder] {
+    padding: 5px;
+  }
+  
+  .Signup_Button {
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 45%;
+    margin-top: 20px;
+  }
+  
+  
+  
+  
+  
