@@ -1,6 +1,5 @@
 /* Login Page CSS */
-
-.Login_Container {
+.Container {
   background-color: #2e4374;
   width: 50%;
   height: 300px;
@@ -11,17 +10,18 @@
   margin-right: auto;
 }
 
-.Login_Text {
-  color: #e5c3a6;
+.Header_Text {
+  color: #ffffff;
   margin-top: 30px;
-  margin-left: 45%;
+  text-align: center;
 }
 
 .textbox {
-  width: 90%;
+  width: 99%;
   height: 30px;
   border-radius: 10px;
   margin: 10px;
+  margin-left: auto;
 }
 
 .textbox:[::placeholder] {
@@ -29,7 +29,7 @@
 }
 
 .Login_Button {
-  background-color: #e5c3a6;
+  background-color: #ffffff;
   width: 100px;
   height: 30px;
   border-radius: 10px;
@@ -49,6 +49,16 @@ h6 {
   height: 30px;
   border-radius: 10px;
   margin-left: 47%;
+  color: #ffffff;
+}
+
+/* Signup */
+.Intro_Button {
+  width: 99%;
+  height: 30px;
+  border-radius: 10px;
+  margin: 20px;
+  margin-left: auto;
 }
 
 
