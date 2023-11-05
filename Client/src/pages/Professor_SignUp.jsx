@@ -1,12 +1,14 @@
 import React from 'react'
 
-function Student_SignUp() {
+function Professor_SignUp() {
     return (
         <div className="Background">
-          <div className="SignupStudent_Container">
+          <div className="Signup_Container">
             <h1 className="Signup_Text">Sign Up</h1>
             <form>
               <input className="textbox" type="text" placeholder="Name" />
+              <input className="textbox" type="text" placeholder="Subjects Taught" />
+              <input className="textbox" type="text" placeholder="About Professor" />
               <input className="textbox" type="text" placeholder="University Name" />
               <input className="textbox" type="text" placeholder="University Email" />
               <input className="textbox" type="text" placeholder="Contact No." />
@@ -19,4 +21,4 @@ function Student_SignUp() {
         </div>
     );
 }
-export default Student_SignUp
+export default Professor_SignUp
