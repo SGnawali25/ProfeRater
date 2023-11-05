@@ -22,6 +22,12 @@ function Professor_Dashboard() {
           </div>
         </div>
       </div>
+      <div className="Professor_About">
+        <h3>
+          Hello! My name is Professor. I teach CS classes. I believe students
+          thrive most with good deadlines
+        </h3>
+      </div>
       <h1 className="Rating_Name"> Overall Rating</h1>
       <div className="Dashboard">
         <div className="Dashboard_Left">

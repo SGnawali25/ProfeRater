@@ -13,12 +13,12 @@ import Student_Dashboard from "./pages/Student_Dashboard.jsx";
 import Rate from "./components/Rate.jsx";
 import Header from "./components/Header.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Pop_up from "./components/Pop_up.jsx";
 
 function App() {
   return (
     <>
-      <Header />
-      <Student_Dashboard />
+      <Professor_Dashboard />
     </>
   );
 }
